@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let submenu = document.querySelector(".submenu > a");
+            submenu.addEventListener("click", function(event) {
+                event.preventDefault();
+                let dropdown = this.nextElementSibling;
+                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+            });
+        });
+        </script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header class="portada">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li> 
+                <li class="submenu">
+                    <a href="servicios.html">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="servicios.html">Spa</a></li>
+                        <li><a href="servicios.html">Maquillaje</a></li>
+                        <li><a href="servicios.html">Manicura</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Bienvenidos a Beauty Studio</h1>
+            <p>Realza tu belleza con nuestros servicios exclusivos</p>
+            <a href="#servicios" class="btn">Ver Servicios</a>
+        </div>
+    </header>
+
+    <!-- Sección de servicios -->
+    <section id="servicios">
+        <h2>Te ofrecemos lo  mejor para tu belleza</h2>
+        <div class="servicio">
+            <img src="imagenes/uñas2.jpg" alt="Spa">
+            <p>Relajantes tratamientos de spa</p>
+        </div>
+        <div class="servicio">
+            <img src="imagenes/pies1.jpg" alt="Maquillaje">
+            <p>Maquillaje profesional</p>
+        </div>
+        <div class="servicio">
+            <img src="imagenes/maquillaje2.jpg" alt="Manicura">
+            <p>Manicura y pedicura</p>
+        </div>
+    </section>
+    
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +54 481 111 2019</p>
+        <p>Email:cortezespinozavanessa@gmail.com</p>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609810512!2d-74.25819368720823!3d40.705825973770084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b5d6b4c0b3%3A0x9f69f9cf9f19e82b!2sNew%20York!5e0!3m2!1ses!2sus!4v1712134590875" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <footer>
+        <h2>Síguenos en Redes Sociales</h2>
+        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </footer>
+</body>
+</html>
